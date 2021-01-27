@@ -29,5 +29,35 @@ img {
 	vertical-align: top;
 }
 
+h2 span,
+h3 span {
+	background-color: cadetblue;
+	color: cornsilk;
+}
+.systemsun h3 span {
+	background-color: rgb(85, 74, 250);
+	color: white;
+}
+p {
+	color: rgb(56, 54, 54);
+}
+a {
+	color: blue;
+}
+#planets__block a,
+#planets__gians a {
+	color: rgb(55, 148, 211);
+}
+.type__earth .planets__mark {
+	background-color: burlywood;
+	color: rgb(16, 37, 77);
+}
+.type__earth .planets__mark.our__planet {
+	background-color: rgb(150, 226, 226);
+	color: rgb(38, 60, 185);
+}
 
-
+.giants span {
+	background-color: rgba(196, 219, 196, 0.829);
+	color: rgb(25, 61, 61);
+}
