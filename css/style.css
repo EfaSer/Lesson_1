@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Lato:wght@400;700&display=swap");
+
+@font-face {
+	font-family: "Minion Pro Med";
+	src: url("../fonts/MinionPro-MediumIt.woff2") format("woff2"), url("../fonts/MinionPro-MediumIt.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Minion Pro";
+	src: url("../fonts/MinionPro-BoldIt.woff2") format("woff2"), url("../fonts/MinionPro-BoldIt.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Minion Pro";
+	src: url("../fonts/MinionPro-It.woff2") format("woff2"), url("../fonts/MinionPro-It.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
 /* Стили обнуления */
 *,
 *::before,
@@ -28,36 +54,65 @@ h6 {
 img {
 	vertical-align: top;
 }
+body {
+	color: rgba(26, 30, 39, 0.842);
+	font-family: Minion Pro;
+	line-height: 140%;
+	font-size: 20px;
+}
 
-h2 span,
-h3 span {
-	background-color: cadetblue;
-	color: cornsilk;
+/*-----------------*/
+header {
+	font-family: "Cormorant Infant", serif;
+	font-size: 52px;
+	line-height: 160%;
+	font-weight: 700;
+	white-space: nowrap;
+	text-align: center;
+	text-shadow: 1px 1px 5px rgb(65, 113, 201);
+	color: rgba(0, 140, 255, 0.877);
+	/*отступ между словами*/
+	word-spacing: 20px;
 }
-.systemsun h3 span {
-	background-color: rgb(85, 74, 250);
-	color: white;
-}
-p {
-	color: rgb(56, 54, 54);
-}
+
 a {
-	color: blue;
-}
-#planets__block a,
-#planets__gians a {
-	color: rgb(55, 148, 211);
-}
-.type__earth .planets__mark {
-	background-color: burlywood;
-	color: rgb(16, 37, 77);
-}
-.type__earth .planets__mark.our__planet {
-	background-color: rgb(150, 226, 226);
-	color: rgb(38, 60, 185);
+	color: rgb(3, 3, 192);
 }
 
-.giants span {
-	background-color: rgba(196, 219, 196, 0.829);
-	color: rgb(25, 61, 61);
+h2 {
+	font-family: "Cormorant Infant", serif;
+	text-align: center;
+	line-height: 150%;
+	font-size: 36px;
+	font-weight: 700;
+}
+/*отступ(красная строка) в списке-содержании*/
+.list {
+	text-indent: 10px;
+}
+/*Список*/
+.list h2 {
+	text-align: left;
+	text-decoration: underline;
+}
+
+/*выравнивание картинок по центру*/
+div div {
+	text-align: center;
+}
+/*обращение к подписям картинок*/
+div > div {
+	font-size: 16px;
+	color: rgb(122, 122, 122);
+	text-decoration: overline;
+	/*отступ между буквами*/
+	letter-spacing: 3px;
+}
+
+.seventh span {
+	font-weight: 700;
+}
+
+.footer {
+	text-align: center;
 }
