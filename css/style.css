@@ -1,25 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&display=swap&");
 
 @font-face {
-	font-family: "Minion Pro Med";
-	src: url("../fonts/MinionPro-MediumIt.woff2") format("woff2"), url("../fonts/MinionPro-MediumIt.woff") format("woff");
+	font-family: "Lato";
+	src: url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
 	font-weight: 500;
-	font-style: italic;
+	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Minion Pro";
-	src: url("../fonts/MinionPro-BoldIt.woff2") format("woff2"), url("../fonts/MinionPro-BoldIt.woff") format("woff");
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Minion Pro";
-	src: url("../fonts/MinionPro-It.woff2") format("woff2"), url("../fonts/MinionPro-It.woff") format("woff");
-	font-weight: normal;
+	font-family: "Lato";
+	src: url("../fonts/Lato-MediumItalic.woff2") format("woff2"), url("../fonts/Lato-MediumItalic.woff") format("woff");
+	font-weight: 500;
 	font-style: italic;
 	font-display: swap;
 }
@@ -31,6 +23,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 li {
 	list-style: none;
@@ -55,79 +48,166 @@ img {
 	vertical-align: top;
 }
 body {
-	color: rgba(26, 30, 39, 0.842);
-	font-family: Minion Pro;
-	line-height: 140%;
-	font-size: 20px;
+	line-height: 1;
+	font-family: Lato;
+}
+/* ---------------- */
+
+/**выравнивание всего контента страницы по центру*/
+.container {
+	max-width: 1110px;
+	margin: 0px auto;
+}
+/** ---------------header--------------------- */
+/*!попытался раскидать элементы header по краям, разбив 3 элемента div в процентном соотношении 20:60:20 + интервалы в блоке навигации*/
+/*!не знаю правильно ли это, но вроде работает*/
+header {
+	height: 43px;
+	white-space: nowrap; /** чтоб не ломалась навигация */
+	margin: 61px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	min-width: 1010px;
+	font-weight: 700;
+}
+header li {
+	display: inline;
+	padding: 0px 49px 0px 0px; /*!подгонял элементы блока навигации к краям родителя, что то так и не понял, почему не работает justify*/
 }
 
-/*-----------------*/
-a {
-	color: rgb(3, 3, 192);
+header .navigation {
+	display: inline-block;
+	width: 59.45%; /*?если взять 60%, то padding у кнопки Sign Up выходит за край*/
 }
-header {
-	font-family: "Cormorant Infant", serif;
-	font-size: 52px;
-	line-height: 160%;
-	font-weight: 700;
-	white-space: nowrap;
-	text-align: center;
-	text-shadow: 1px 1px 20px rgb(3, 91, 150), 1px 1px 1px #000;
-	color: rgba(0, 140, 255, 0.877);
-	/*отступ между словами*/
-	word-spacing: 20px;
+header a {
+	color: #222831;
 }
-header span {
-	text-transform: uppercase;
+.logo {
+	display: inline-block;
+	width: 20%;
+	color: #10375c;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
 }
+/*?почему то если поставить ширину 20% этот блок-login перепрыгивает на следующую строку....работает только с шириной 19%...*/
+/**решил проблему убрав border(смотрел им границы), теперь все норм с шириной 20%, наверно border добавлял еще ширины*/
+.login {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+}
+.login .sign__up {
+	background-color: #ff5722;
+	color: white;
+	padding: 10px 10px 10px 10px;
+}
+.login .log__in {
+	padding: 10px 20px;
+	color: #ff5722;
+	padding: 10px 10px 10px 20px;
+}
+
+.last__item {
+	padding: 0; /**убирал отступ у последнего элемента блока навигации, чтобы он прижался к краю родителя*/
+}
+/**----------------main------------------*/
+
+.main__title {
+	margin: 94px 0px 0px 0px;
+}
+
 .title {
-	text-align: center;
-}
-h2 {
-	font-family: "Cormorant Infant", serif;
-	text-align: center;
-	line-height: 150%;
-	font-size: 36px;
+	display: inline-block;
 	font-weight: 700;
-}
-/*отступ(красная строка) в список-содержание*/
-.list {
-	text-indent: 10px;
-}
-/*зачеркивание*/
-.list ul li span {
-	text-decoration: line-through;
-}
-/*Список-содержание*/
-.list h2 {
+	font-size: 52px;
+	line-height: 67px;
+	color: #10375c;
 	text-align: left;
-	text-decoration: underline;
 }
-/*одновлеменное выравнивание по левому и правому краю
-обращение ко всем р 
-*/
-.first > p {
+.title span {
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: #dd2c00;
+}
+.block1 {
+	margin: 100px 0px 0px 0px;
+}
+.block1__title {
+	display: inline-block;
+	width: 650px;
+	text-shadow: 3px 1px 5px rgb(56, 40, 40);
+}
+
+.block1__text {
+	display: inline-block;
+	width: 250px;
+	height: 100px;
+	overflow: hidden;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.img {
+	text-align: right;
+	margin: -14px -235px 0px 0px;
+}
+.block2 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.block2__content {
+	width: 350px;
+	height: 250px;
+	background-color: #10375c;
+	margin: 0px 0px 0px 80px;
+	display: inline-block;
+	color: azure;
+	overflow: scroll;
+	line-height: 30px;
+	padding: 0 20px;
+	word-spacing: 10px;
+}
+.block3 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: left;
+}
+.block3__content {
+	display: inline-block;
+	width: 350px;
+	height: 250px;
+	background-color: #2e72b3;
+	overflow: auto;
+	line-height: 30px;
+	padding: 0 20px;
+	letter-spacing: 5px;
+}
+
+.block4 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: right;
+}
+.block4__content {
+	display: inline-block;
+	width: 350px;
+	height: 250px;
+	background-color: #946714;
+	overflow: hidden;
+	line-height: 30px;
+	padding: 0 20px;
+	color: rgb(207, 204, 198);
+	margin: -90px 0px 0px 0px;
+	font-weight: 700;
+	font-style: italic;
+}
+.block4__content p {
 	text-align: justify;
 }
-/*все слова с большой буквы в параграфах данного блока*/
-.second > p {
-	text-transform: capitalize;
-}
-/*выравнивание картинок по центру*/
-div div {
-	text-align: center;
-}
-/*обращение к подписям картинок*/
-div > div {
-	font-size: 16px;
-	color: rgb(122, 122, 122);
-	text-decoration: overline;
-	/*отступ между буквами*/
-	letter-spacing: 3px;
-}
-.seventh span {
-	font-weight: 700;
-}
-.footer {
-	text-align: center;
+.block1,
+.block2,
+.block3,
+.block4 {
+	text-shadow: 2px 1px 3px #030f1b;
 }
