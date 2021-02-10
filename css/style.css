@@ -1,0 +1,297 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"),
+		url("../fonts/Gilroy-MediumItalic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: Gilroy;
+	font-style: italic;
+}
+/*-------------------------------*/
+
+body {
+	font-size: 18px;
+}
+h2 {
+	font-size: 25px;
+	font-weight: 700;
+}
+header {
+	background-color: #adcea3;
+	text-align: right;
+}
+header li {
+	margin: 10px 0px 10px 0px;
+	display: inline-block;
+	padding: 0px 70px 0px 0px;
+	color: rgb(239, 255, 255);
+	text-transform: capitalize;
+}
+header a {
+	color: #ffffff;
+}
+.main {
+	color: rgb(22, 34, 20);
+}
+.block {
+	width: 100%;
+	font-size: 0;
+	background: linear-gradient(to bottom, #adcea3 0%, #adcea3 50%, #adcea3 51%, rgba(255, 255, 255, 1) 57%);
+}
+.block > div {
+	display: inline-block;
+	font-size: 16px;
+	width: 25%;
+	padding: 40px 40px 40px 50px;
+}
+.block1,
+.block3 {
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	background-color: rgb(255, 255, 255);
+	color: rgb(22, 34, 20);
+}
+.block2,
+.block4 {
+	border-bottom-left-radius: 60%;
+	border-bottom-right-radius: 60%;
+	background-color: #adcea3;
+	color: rgb(255, 255, 255);
+}
+
+.content {
+	background: url("../img/") no-repeat;
+}
+.logo {
+	max-width: 1000px;
+	margin: 80px auto 120px;
+	text-align: justify;
+}
+.content .text {
+	max-width: 320px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+}
+.content .text > div {
+	filter: drop-shadow(2px -3px 6px #353f31);
+}
+.content .text.text__1 {
+	margin-left: 395px;
+	background-color: #adcea3;
+	border: 1px solid #adcea3;
+	filter: drop-shadow(2px -3px 6px #353f31);
+	border-radius: 50%;
+	width: 280px;
+	height: 280px;
+}
+.content .text__2 {
+	display: inline-block;
+	text-align: center;
+	background-color: #adcea3;
+	border: 1px solid #adcea3;
+	margin: 19px 0px 0px 4px;
+	border-radius: 50%;
+	width: 260px;
+	height: 260px;
+}
+.content .text__3 {
+	display: inline-block;
+	text-align: center;
+	background-color: #adcea3;
+	border: 1px solid #adcea3;
+	margin: 19px 0px 0px -5px;
+	border-radius: 50%;
+	width: 240px;
+	height: 240px;
+}
+.content .text__4 {
+	display: inline-block;
+	text-align: center;
+	background: url("../img/avatar.jpg") center / cover no-repeat;
+	border: 1px solid #665675;
+	margin: 19px 0px 0px -5px;
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+}
+
+.logo li {
+	padding: 5px 0px 0px 30px;
+	background: url("../img/check.png") 0px 5px no-repeat;
+	line-height: 20px;
+}
+
+.kiwi {
+	padding-top: 5px;
+	background: url("../img/kiwis.png");
+	text-align: center;
+	box-shadow: 3px 3px 8px 6px #1f271c;
+	min-height: 500px;
+}
+.kiwi h2 {
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 3px -3px 6px #10130f;
+}
+.kiwi p {
+	padding-top: 10px;
+	display: inline-block;
+	max-width: 500px;
+	color: #1f271c;
+	font-weight: 700;
+	text-shadow: 3px -3px 6px #10130f;
+}
+.kiwi .kiwi__block {
+	display: inline-block;
+	padding: 10px;
+	margin-top: 55px;
+	border-radius: 20px;
+	max-width: 550px;
+	background-color: #ffffff;
+	box-shadow: inset 3px -3px 6px #10130f;
+}
+
+.more .more__block {
+	background: url("../img/1458630620-shutterstock-11918329.jpg") center / cover no-repeat fixed;
+	min-height: 900px;
+}
+.more__block a {
+	display: block;
+	max-width: 300px;
+	padding: 10px;
+}
+
+.logos {
+	box-shadow: 3px -3px 8px 4px #1f271c;
+	min-height: 750px;
+	margin-bottom: 50px;
+}
+.logos__blocks {
+	max-width: 1000px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.logos__blocks > div {
+	margin: 30px 80px 50px 80px;
+	display: inline-block;
+	font-size: 18px;
+	max-width: 33.33%;
+	max-height: 300px;
+	vertical-align: top;
+	padding: 30px 60px 30px 20px;
+}
+.logos__blocks .text1 {
+	background: url("../img/flying-eagle.svg") right top / 90px no-repeat;
+	background-color: #adcea377;
+	border-radius: 20px;
+	box-shadow: 3px -3px 5px 3px #1f271cce;
+}
+.logos__blocks .text2 {
+	background: url("../img/flying-eagle.svg") right top / 90px no-repeat;
+	background-color: #adcea377;
+	border-radius: 20px;
+	box-shadow: 3px -3px 5px 3px #1f271cce;
+}
+.logos__blocks .text3 {
+	background: url("../img/flying-eagle.svg") right top / 90px no-repeat;
+	background-color: #adcea377;
+	border-radius: 20px;
+	box-shadow: 3px -3px 5px 3px #1f271cce;
+}
+.logos__blocks .text4 {
+	background: url("../img/flying-eagle.svg") right top / 90px no-repeat;
+	background-color: #adcea377;
+	border-radius: 20px;
+	box-shadow: 3px -3px 5px 3px #1f271cce;
+}
+.logos__blocks .text5 {
+	background: url("../img/flying-eagle.svg") right top / 90px no-repeat,
+		url("../img/green.jpg") center / cover no-repeat scroll;
+	background-color: #adcea377;
+	border-radius: 20px;
+	box-shadow: 3px -3px 5px 3px #1f271cce;
+}
+.logos__blocks .text6 {
+	background: url("../img/flying-eagle.svg") right top / 90px no-repeat,
+		url("../img/green.jpg") center / cover no-repeat scroll;
+	background-color: #adcea377;
+	border-radius: 20px;
+	box-shadow: 3px -3px 5px 3px #1f271cce;
+}
+
+.block__button {
+	max-width: 300px;
+	margin: 30px auto;
+}
+.button {
+	display: block;
+	max-width: 300px;
+	padding: 20px;
+	border-radius: 30px;
+	background-color: #3c4e3677;
+	text-align: center;
+	color: aliceblue;
+	font-weight: 700;
+	box-shadow: 2px -2px 1px 2px #2f3d2ac4;
+}
