@@ -1,0 +1,367 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+body {
+	line-height: 1;
+	font-family: Lato;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/* ------------------ */
+
+body {
+	font-family: "Gilroy";
+	background-color: #111428;
+}
+
+.wrapper {
+}
+.header {
+	padding: 30px 0;
+	box-shadow: 0 0 5px 2px #000;
+}
+.header__container,
+.alignment {
+	max-width: 1219px;
+	margin: 0px auto;
+}
+.header__container {
+}
+.header__logo {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-right: 60px;
+}
+.nav {
+	display: inline-block;
+}
+.nav__list {
+	vertical-align: top;
+}
+.nav__list a {
+	color: #fff;
+}
+.nav__list > li {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 0px 26px 0px 0px;
+	position: relative;
+}
+.header__search {
+	display: inline-block;
+	width: 45%;
+}
+.header__search-container {
+}
+
+.form__search {
+}
+.form__search input {
+	width: 100%;
+	height: 41px;
+	font-size: 16px;
+	background: #111428 url("../img/icon.png") 93% 12px no-repeat;
+	border: 1px solid #a3a3a3;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 0 14px;
+	color: #a3a3a3;
+}
+.header__avatar {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 40px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: rgb(126, 126, 126);
+}
+.check-mark::after {
+	content: "";
+	padding: 0px 20px 0px 0px;
+	vertical-align: middle;
+	background: url("../img/icon1.png") center / auto no-repeat;
+	width: 10px;
+	height: 6px;
+}
+.mark-check::after {
+	content: "";
+	padding: 5px 25px 0px 18px;
+	vertical-align: middle;
+	background: url("../img/icon1.png") right 18px / 10px 6px no-repeat;
+	width: 10px;
+	height: 30px;
+}
+/*выпадающее меню*/
+.menu {
+	position: relative;
+	font-size: 16px;
+	line-height: 19px;
+}
+.menu__container {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 30px;
+	overflow: hidden;
+	max-width: 170px;
+	height: 332px;
+	border-radius: 5px;
+}
+.style {
+	width: 170px;
+	height: 332px;
+	background-color: #337ab7;
+	padding: 20px;
+	margin: 0px 0px 0px 15px;
+	overflow: auto;
+	border-radius: 5px;
+}
+.style li {
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 9px;
+	text-align: left;
+}
+.check-mark:hover .menu__container {
+	display: block;
+}
+.menu__container li:hover {
+	text-decoration: underline;
+}
+/*------------------*/
+
+.main {
+}
+.main__container {
+	max-width: 384px;
+	margin: 19px auto;
+	text-align: center;
+}
+.main__logo {
+	margin-top: 19px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: capitalize;
+	color: #a3a3a3;
+}
+.main__enter {
+}
+.main__enter h2 {
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 46px;
+	color: #ffffff;
+	margin-bottom: 41px;
+}
+.main__form {
+}
+.main__form a {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #64b369;
+}
+.main__form a:hover {
+	text-decoration: underline;
+}
+.main__email {
+	margin-bottom: 30px;
+}
+.main__pass {
+	margin-bottom: 32px;
+}
+.main__email input {
+	padding: 0 20px;
+	width: 384px;
+	height: 50px;
+	left: 768px;
+	top: 250px;
+	background: #ffffff;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #777777;
+}
+.main__pass input {
+	padding: 0 20px;
+	width: 384px;
+	height: 50px;
+	left: 768px;
+	top: 250px;
+	background: #ffffff;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #777777;
+}
+
+.main__memory {
+	position: relative;
+	margin-bottom: 29px;
+	text-align: left;
+}
+.main__memory label {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+}
+.main__memory a {
+	display: inline-block;
+	margin-left: 76px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.main__memory p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+}
+.main__button {
+}
+.main__social {
+}
+.main__social p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.main__social-img {
+	margin-bottom: 30px;
+}
+.main__social-img img {
+	margin-right: 30px;
+}
+.main__social-img img:last-child {
+	margin-right: 0px;
+}
+.main__reg {
+}
+.main__reg p {
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.checkbox {
+	display: inline-block;
+	font-size: 0;
+}
+.checkbox__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+.checkbox__label {
+	display: inline-block;
+	padding: 0px 0px 0px 30px;
+	cursor: pointer;
+}
+
+.checkbox__label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	padding: 0px 20px 0px 0px;
+	background: #ffffff;
+	border-radius: 5px;
+}
+.checkbox__input:checked + .checkbox__label::before {
+	background: #fff url("../img/Rectangle71.svg") center / 12px no-repeat;
+}
