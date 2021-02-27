@@ -5,19 +5,21 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Регистрация</title>
+		<title>Вход</title>
+		<link rel="stylesheet" href="css/registr.css">
 	</head>
 
 	<body>
+
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__container">
+				<div class="header__container alignment">
 					<div class="header__logo">
 						Uzbeklar.net
 					</div>
 					<nav class="nav">
 						<ul class="nav__list">
-							<li class="menu drop-down-menu check-mark"><a href="#">Фильмы</a>
+							<li class="menu check-mark"><a href="#">Фильмы</a>
 								<div class="menu__container">
 									<ul class="menu__list style">
 										<li><a href="#">Все жанры</a></li>
@@ -78,11 +80,82 @@
 						</div>
 					</div>
 					<div class="header__avatar mark-check">
-
+						<div class="header__avatar-container">
+							<div class="header__profile">
+								<ul>
+									<li><a href="">Профиль</a></li>
+									<li><a href="">Выход</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 			</header>
 
 			<main class="main">
+				<div class="main__logo alignment">
+					<p>Регистрация</p>
+				</div>
+				<div class="main__container">
+					<div class="main__recovery">
+						<form action="#" class="main__form">
+							<h2>Регистрация</h2>
+
+
+							<div class="main__name input-style">
+								<input type="text" required placeholder="Имя*">
+							</div>
+
+							<div class="main__surname input-style">
+								<input type="text" required placeholder="Фамилия*">
+							</div>
+
+							<div class="main__login input-style">
+								<input type="text" required placeholder="Логин*">
+							</div>
+
+							<div class="main__email input-style">
+								<input type="email" required placeholder="EMail*">
+							</div>
+							<div class="main__pas input-style">
+								<input type="password" required placeholder="Пароль*">
+							</div>
+							<div class="main__pas-pas input-style">
+								<input type="password" required placeholder="Повторите пароль*">
+							</div>
+
+							<div class="main__radio">
+								<div class="main__sex">
+									<div class="man">
+										<input class="checkbox__input" type="radio" checked name="sex" id="sex-man">
+										<label class="checkbox__label" for="sex-man">Мужчина</label>
+									</div>
+									<div class="woman">
+										<input class="checkbox__input" type="radio" name="sex" id="sex-woman">
+										<label class="checkbox__label" for="sex-woman">Женщина</label>
+									</div>
+								</div>
+
+								<div class="main__conditions">
+									<div class="main__conditions-in checkbox">
+										<input class="checkbox__input" type="checkbox" id="checkmemory">
+										<label class="checkbox__label" for="checkmemory">Я согласен с </label>
+									</div>
+									<a href="#">Условия и правила</a>
+								</div>
+							</div>
+
+							<div class="main__button">
+								<button class="registration" type="submit">Регистрация</button>
+							</div>
+
+							<div class="main__entrance">
+								<p>У вас есть аккаунта?</p>
+								<a href="auth.html">Войти</a>
+							</div>
+
+						</form>
+					</div>
+				</div>
 
 			</main>
 

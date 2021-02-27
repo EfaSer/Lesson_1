@@ -5,10 +5,12 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Восстановление пароля</title>
+		<title>Вход</title>
+		<link rel="stylesheet" href="css/pass.css">
 	</head>
 
 	<body>
+
 		<div class="wrapper">
 			<header class="header">
 				<div class="header__container">
@@ -17,7 +19,7 @@
 					</div>
 					<nav class="nav">
 						<ul class="nav__list">
-							<li class="menu drop-down-menu check-mark"><a href="#">Фильмы</a>
+							<li class="menu check-mark"><a href="#">Фильмы</a>
 								<div class="menu__container">
 									<ul class="menu__list style">
 										<li><a href="#">Все жанры</a></li>
@@ -78,11 +80,48 @@
 						</div>
 					</div>
 					<div class="header__avatar mark-check">
-
+						<div class="header__avatar-container">
+							<div class="header__profile">
+								<ul>
+									<li><a href="">Профиль</a></li>
+									<li><a href="">Выход</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 			</header>
 
 			<main class="main">
+				<div class="main__logo alignment">
+					<p>Восстановление пароля</p>
+				</div>
+				<div class="main__container">
+					<div class="main__recovery">
+						<form action="#" class="main__form">
+							<h2>Восстановление пароля</h2>
+							<p>Введите Email, на него будет выслан новый пароль</p>
+							<div class="main__conyainer-in">
+								<div class="main__email">
+									<input type="email" required placeholder="Почта*">
+								</div>
+								<div class="main__return">
+									<div class="main__return-in"><a href="auth.html">Вернуться в форму авторизации</a></div>
+								</div>
+								<div class="main__button">
+									<button class="enter" type="submit">Отправить</button>
+								</div>
+								<div class="main__spam">
+									<p>* Если вы не получили письмо с паролем,
+										проверьте папку Спам.</p>
+								</div>
+								<div class="main__reg">
+									<p>У вас нет аккаунта?</p>
+									<a href="registr.html">Регистрация</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 
 			</main>
 

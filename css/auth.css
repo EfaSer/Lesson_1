@@ -89,8 +89,6 @@ body {
 	background-color: #111428;
 }
 
-.wrapper {
-}
 .header {
 	padding: 30px 0;
 	box-shadow: 0 0 5px 2px #000;
@@ -101,6 +99,7 @@ body {
 	margin: 0px auto;
 }
 .header__container {
+	position: relative;
 }
 .header__logo {
 	display: inline-block;
@@ -132,11 +131,7 @@ body {
 	display: inline-block;
 	width: 45%;
 }
-.header__search-container {
-}
 
-.form__search {
-}
 .form__search input {
 	width: 100%;
 	height: 41px;
@@ -150,30 +145,75 @@ body {
 }
 .header__avatar {
 	display: inline-block;
-	vertical-align: middle;
 	margin-left: 40px;
-	width: 30px;
-	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: rgb(126, 126, 126);
 }
+.header__avatar-container {
+	width: 132%;
+	height: 120%;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+}
 .check-mark::after {
 	content: "";
-	padding: 0px 20px 0px 0px;
 	vertical-align: middle;
 	background: url("../img/icon1.png") center / auto no-repeat;
 	width: 10px;
 	height: 6px;
+	cursor: pointer;
+	padding: 0px 0px 0px 20px;
 }
 .mark-check::after {
 	content: "";
-	padding: 5px 25px 0px 18px;
-	vertical-align: middle;
-	background: url("../img/icon1.png") right 18px / 10px 6px no-repeat;
+	position: absolute;
+	top: 45%;
+	left: 110%;
+	background: url("../img/icon1.png") right 0px / 10px 6px no-repeat;
 	width: 10px;
 	height: 30px;
 }
+.header__profile {
+	display: none;
+	position: absolute;
+	top: 95%;
+	right: 0;
+	width: 137px;
+	height: 80px;
+	background: #337ab7;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	padding: 10px 15px 20px;
+}
+.header__profile li {
+	margin-bottom: 9px;
+	padding: 3px 5px;
+}
+.header__profile a {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+}
+
 /*выпадающее меню*/
+
+.header__avatar-container:hover .header__profile {
+	display: block;
+}
+
+.header__avatar-container li:hover {
+	background: #a6d6ff;
+	border-radius: 4px;
+}
+
 .menu {
 	position: relative;
 	font-size: 16px;
@@ -203,18 +243,19 @@ body {
 	font-size: 16px;
 	margin-bottom: 9px;
 	text-align: left;
+	padding: 3px 5px;
+	border-radius: 3px;
 }
 .check-mark:hover .menu__container {
 	display: block;
 }
 .menu__container li:hover {
-	text-decoration: underline;
+	background: #a6d6ff;
+	border-radius: 4px;
 }
 /*------------------*/
 
-.main {
-}
-.main__container {
+.main__container > div {
 	max-width: 384px;
 	margin: 19px auto;
 	text-align: center;
@@ -228,8 +269,7 @@ body {
 	text-transform: capitalize;
 	color: #a3a3a3;
 }
-.main__enter {
-}
+
 .main__enter h2 {
 	font-weight: bold;
 	font-size: 38px;
@@ -237,8 +277,7 @@ body {
 	color: #ffffff;
 	margin-bottom: 41px;
 }
-.main__form {
-}
+
 .main__form a {
 	font-weight: 500;
 	font-size: 18px;
@@ -303,10 +342,6 @@ body {
 	line-height: 21px;
 	color: #ffffff;
 }
-.main__button {
-}
-.main__social {
-}
 .main__social p {
 	font-weight: 500;
 	font-size: 18px;
@@ -323,8 +358,7 @@ body {
 .main__social-img img:last-child {
 	margin-right: 0px;
 }
-.main__reg {
-}
+
 .main__reg p {
 	display: inline-block;
 	margin-right: 10px;
@@ -364,4 +398,16 @@ body {
 }
 .checkbox__input:checked + .checkbox__label::before {
 	background: #fff url("../img/Rectangle71.svg") center / 12px no-repeat;
+}
+/*кнопка*/
+.enter {
+	width: 384px;
+	height: 50px;
+	background: #337ab7;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	color: #ffffff;
+	margin-bottom: 30px;
 }
