@@ -134,17 +134,17 @@ textarea {
 	margin-bottom: 100px;
 }
 
-.line {
+._line {
 	font-size: 20px;
 	line-height: 30px;
 	margin-bottom: 8px;
 }
-.line-text {
+._line-text {
 	display: inline-block;
 	position: relative;
 }
 
-.line-text::after {
+._line-text::after {
 	content: "";
 	width: 72px;
 	height: 2px;
@@ -230,19 +230,19 @@ textarea {
 	line-height: 26px;
 	color: #9a9a9a;
 }
-.block__container {
+._block-container {
 	width: 200px;
 	margin: 0px 0px 60px 0px;
 	padding: 0px 0px 0px 50px;
 }
-.block__container:last-child {
+._block-container:last-child {
 	margin-bottom: 0;
 }
-.block-container {
+._block-container {
 	position: relative;
 }
 
-.block-container::before {
+._block-container::before {
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -251,22 +251,22 @@ textarea {
 	height: 32px;
 }
 /* --------картинки---------- */
-.block-container1::before {
+._block-container1::before {
 	background: url("../img/1.png") center / cover no-repeat;
 }
-.block-container2::before {
+._block-container2::before {
 	background: url("../img/2.png") center / cover no-repeat;
 }
-.block-container3::before {
+._block-container3::before {
 	background: url("../img/3.png") center / cover no-repeat;
 }
-.block-container4::before {
+._block-container4::before {
 	background: url("../img/4.png") center / cover no-repeat;
 }
-.block-container5::before {
+._block-container5::before {
 	background: url("../img/5.png") center / cover no-repeat;
 }
-.block-container6::before {
+._block-container6::before {
 	background: url("../img/6.png") center / cover no-repeat;
 }
 
@@ -376,11 +376,11 @@ p {
 	width: 320px;
 	font-family: Lora;
 }
-.news-block {
+._news-block {
 	padding: 5px;
 	width: 360px;
 }
-.news-block:hover {
+._news-block:hover {
 	box-shadow: 0px 4px 16px rgba(70, 67, 66, 0.32);
 }
 .main__news-text {

@@ -94,7 +94,7 @@ body {
 	box-shadow: 0 0 5px 2px #000;
 }
 .header__container,
-.alignment {
+._alignment {
 	max-width: 1219px;
 	margin: 0px auto;
 }
@@ -162,7 +162,7 @@ body {
 	vertical-align: middle;
 	border-radius: 50%;
 }
-.check-mark::after {
+._check-mark::after {
 	content: "";
 	vertical-align: middle;
 	background: url("../img/icon1.png") center / auto no-repeat;
@@ -171,7 +171,7 @@ body {
 	cursor: pointer;
 	padding: 0px 0px 0px 20px;
 }
-.mark-check::after {
+._mark-check::after {
 	content: "";
 	position: absolute;
 	top: 45%;
@@ -229,7 +229,7 @@ body {
 	height: 332px;
 	border-radius: 5px;
 }
-.style {
+._style {
 	width: 170px;
 	height: 332px;
 	background-color: #337ab7;
@@ -238,7 +238,7 @@ body {
 	overflow: auto;
 	border-radius: 5px;
 }
-.style li {
+._style li {
 	font-weight: 500;
 	font-size: 16px;
 	margin-bottom: 9px;
@@ -246,7 +246,7 @@ body {
 	padding: 3px 5px;
 	border-radius: 3px;
 }
-.check-mark:hover .menu__container {
+._check-mark:hover .menu__container {
 	display: block;
 }
 .menu__container li:hover {
@@ -294,11 +294,11 @@ body {
 	text-decoration: underline;
 }
 
-.input-style {
+._input-style {
 	margin-bottom: 30px;
 }
 
-.input-style input {
+._input-style input {
 	padding: 0 20px;
 	width: 384px;
 	height: 50px;
@@ -351,12 +351,11 @@ body {
 	line-height: 21px;
 	color: #ffffff;
 }
-.man {
-	position: relative;
-}
+.man,
 .woman {
 	position: relative;
 }
+
 .checkbox {
 	display: inline-block;
 	font-size: 0;
